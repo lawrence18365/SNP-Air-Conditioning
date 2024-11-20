@@ -1,0 +1,3250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>SNP AIR CONDITIONING | Premium HVAC Services New South Wales</title>
+    <meta name="description" content="New South Wales's premium air conditioning installation & service specialists. 24/7 dedicated service for residential and commercial climate control solutions.">
+    <meta name="keywords" content="air conditioning New South Wales, hvac services, commercial air conditioning, residential cooling, premium ac installation">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SNP AIR CONDITIONING | Premium HVAC Services">
+    <meta property="og:description" content="New South Wales's premium air conditioning installation & service specialists">
+    <meta property="og:image" content="/api/placeholder/1200/630">
+    
+    <!-- Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Core Variables */
+        :root {
+            /* Brand Colors */
+            --primary: #046ab9;
+            --secondary: #c62834;
+            --dark: #0A0A0A;
+            --darker: #050505;
+            --light: #FFFFFF;
+            --gray-100: #F7F7F7;
+            --gray-200: #E5E5E5;
+            --gray-300: #D4D4D4;
+            --gray-400: #A3A3A3;
+            --gray-500: #737373;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-800: #262626;
+            --gray-900: #171717;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary), #0487e2);
+            --gradient-secondary: linear-gradient(135deg, var(--secondary), #e63442);
+            --gradient-dark: linear-gradient(135deg, var(--dark), var(--gray-800));
+            --gradient-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+            
+            /* Transitions */
+            --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            
+            /* Typography */
+            --font-heading: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-body: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            
+            /* Layout */
+            --container-max: 1400px;
+            --container-padding: 2rem;
+            --header-height: 80px;
+        }
+
+        /* Base Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--light);
+            background: var(--dark);
+            overflow-x: hidden;
+        }
+
+      /* Loader Styles */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--darker);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+
+        .loader-wrapper.hidden {
+            transform: translateY(-100%);
+        }
+
+        .loader-content {
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .loader-brand {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            letter-spacing: 0.2em;
+            animation: brandReveal 0.8s ease-out forwards;
+        }
+
+        .loader-line {
+            width: 100%;
+            height: 2px;
+            background: rgba(255,255,255,0.1);
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loader-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease-out;
+        }
+
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all var(--transition-normal);
+            padding: 1.5rem 0;
+            background: transparent;
+        }
+
+        .nav.scrolled {
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light);
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: color var(--transition-normal);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--darker);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-overlay);
+            z-index: 2;
+        }
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 0 var(--container-padding);
+            text-align: center;
+        }
+
+        .hero-pretitle {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 2rem;
+            color: white;
+            animation: fadeIn 0.8s ease-out 0.2s forwards;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            animation: slideUp 1s ease-out 0.4s forwards;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 3rem;
+            animation: slideUp 1s ease-out 0.6s forwards;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 1.2rem 3rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            animation: slideUp 1s ease-out 0.8s forwards;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(4, 106, 185, 0.3);
+        }
+
+        /* Emergency Contact */
+        .emergency-contact {
+            position: fixed;
+            right: 2rem;
+            bottom: 2rem;
+            z-index: 900;
+        }
+
+        .emergency-button {
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: var(--shadow-lg);
+            animation: glowPulse 2s infinite;
+        }
+
+        .emergency-button:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 0 0 rgba(4, 106, 185, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(4, 106, 185, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(4, 106, 185, 0); }
+        }
+
+        /* Responsive Designs */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-content {
+                padding: 0 1rem;
+            }
+
+            .emergency-contact {
+                right: 1rem;
+                bottom: 1rem;
+            }
+
+            .emergency-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-brand">SNP AIR CONDITIONING</div>
+            <div class="loader-line">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">SNP AIR CONDITIONING</a>
+            <div class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="tel:0413816375" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i>
+                    0413 816 375
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+           <img src="https://i.postimg.cc/pLBCf32b/2023-09-04.jpg" alt="Modern Air Conditioned Home Interior">
+        </div>
+        <div class="hero-content">
+            <div class="hero-pretitle">New South Wales's Premium Climate Solutions</div>
+            <h1 class="hero-title">Climate Control Excellence</h1>
+            <p class="hero-subtitle">Expert air conditioning installation, service, and maintenance for residential and commercial properties.</p>
+            <a href="#contact" class="hero-cta">
+                <i class="fas fa-snowflake"></i>
+                REQUEST SERVICE
+            </a>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <div class="emergency-contact">
+        <a href="tel:0413816375" class="emergency-button">
+            <i class="fas fa-phone-alt"></i>
+            0413 816 375
+        </a>
+    </div>
+<!-- Services Section -->
+    <section class="services-premium" id="services">
+        <style>
+            .services-premium {
+                --premium-dark: #0A0A0A;
+                --premium-light: #FFFFFF;
+                padding: 8rem 0;
+                background: var(--premium-dark);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .services-container {
+                max-width: 1600px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+
+            .services-header {
+                text-align: center;
+                margin-bottom: 6rem;
+            }
+
+            .services-title {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                font-weight: 800;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 1.5rem;
+            }
+
+            .services-subtitle {
+                color: var(--gray-300);
+                font-size: 1.25rem;
+                max-width: 800px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2.5rem;
+                margin-top: 2rem;
+            }
+
+            .service-card {
+                height: 450px;
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 20px;
+                padding: 3rem;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .service-card:hover {
+                transform: translateY(-10px) scale(1.02);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+            }
+
+            .service-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--gradient-primary);
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                z-index: 1;
+            }
+
+            .service-card:hover::before {
+                opacity: 0.05;
+            }
+
+            .service-content {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 2;
+            }
+
+            .service-icon {
+                font-size: 3.5rem;
+                margin-bottom: 2rem;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: transform 0.4s ease;
+            }
+
+            .service-title {
+                font-size: 1.75rem;
+                font-weight: 700;
+                color: var(--light);
+                margin-bottom: 1.5rem;
+            }
+
+            .service-description {
+                color: var(--gray-300);
+                line-height: 1.7;
+                margin-bottom: 2rem;
+                flex-grow: 1;
+            }
+
+            .service-features {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 2rem 0;
+            }
+
+            .service-feature {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 0.75rem;
+                color: var(--gray-300);
+            }
+
+            .feature-icon {
+                color: var(--primary);
+                font-size: 0.9rem;
+            }
+
+            .service-link {
+                margin-top: auto;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 1rem 2rem;
+                background: var(--gradient-primary);
+                border-radius: 8px;
+                color: var(--light);
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            .service-link:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(4, 106, 185, 0.2);
+            }
+
+            @media (max-width: 1400px) {
+                .services-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .services-grid {
+                    grid-template-columns: 1fr;
+                }
+                .services-premium {
+                    padding: 4rem 0;
+                }
+                .service-card {
+                    height: auto;
+                    min-height: 400px;
+                }
+            }
+        </style>
+
+        <div class="services-container">
+            <header class="services-header">
+                <h2 class="services-title">Complete Climate Solutions</h2>
+                <p class="services-subtitle">Comprehensive air conditioning services for residential and commercial properties</p>
+            </header>
+
+            <div class="services-grid">
+                <!-- Residential Installation -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-home service-icon"></i>
+                        <h3 class="service-title">Residential Installation</h3>
+                        <p class="service-description">Expert installation of premium air conditioning systems for homes of all sizes. Tailored solutions for your comfort needs.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Custom System Design</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Energy Efficient Solutions</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Professional Installation</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Get Quote
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Commercial HVAC -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-building service-icon"></i>
+                        <h3 class="service-title">Commercial HVAC</h3>
+                        <p class="service-description">Comprehensive commercial air conditioning solutions for offices, retail spaces, and industrial facilities.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Large-Scale Systems</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>24/7 Support</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Preventive Maintenance</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Emergency Repairs -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-tools service-icon"></i>
+                        <h3 class="service-title">Emergency Repairs</h3>
+                        <p class="service-description">Fast response emergency repair service for all air conditioning systems. Available 24/7 for urgent situations.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>24/7 Emergency Service</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Rapid Response Time</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>All Brands Serviced</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Emergency Call
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Maintenance Plans -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-calendar-check service-icon"></i>
+                        <h3 class="service-title">Maintenance Plans</h3>
+                        <p class="service-description">Regular maintenance programs to ensure optimal performance and extend system lifespan.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Scheduled Service</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Performance Optimization</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Priority Support</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- System Upgrades -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-chart-line service-icon"></i>
+                        <h3 class="service-title">System Upgrades</h3>
+                        <p class="service-description">Upgrade your existing system for improved efficiency and performance with the latest technology.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Energy Assessment</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Smart Controls</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Efficiency Boost</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Upgrade Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ducted Systems -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-wind service-icon"></i>
+                        <h3 class="service-title">Ducted Systems</h3>
+                        <p class="service-description">Specialized installation and maintenance of ducted air conditioning systems for whole-home comfort.</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Whole Home Cooling</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Zone Control</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Custom Design</span>
+                            </li>
+                        </ul>
+                        <a href="tel:0413816375" class="service-link">
+                            Free Consultation
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-premium" id="experience">
+        <style>
+            .experience-premium {
+                padding: 8rem 0;
+                background: var(--darker);
+                position: relative;
+                overflow: hidden;
+                color: var(--light);
+            }
+
+            .experience-premium::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 100%;
+                height: 200%;
+                background: linear-gradient(135deg, transparent 0%, rgba(4,106,185,0.03) 50%, transparent 100%);
+                transform: rotate(-15deg);
+                pointer-events: none;
+            }
+
+            .experience-container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 0 2rem;
+                position: relative;
+                z-index: 2;
+            }
+
+            .experience-grid {
+                display: grid;
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 4rem;
+                align-items: center;
+            }
+
+            .experience-content {
+                padding-right: 2rem;
+            }
+
+            .experience-title {
+                font-size: clamp(2.5rem, 5vw, 3.5rem);
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                line-height: 1.2;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .experience-description {
+                font-size: 1.1rem;
+                color: var(--gray-300);
+                line-height: 1.8;
+                margin-bottom: 3rem;
+            }
+
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .stat-card {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                padding: 2rem;
+                transition: all 0.3s ease;
+            }
+
+            .stat-card:hover {
+                transform: translateY(-5px);
+                background: rgba(255,255,255,0.03);
+            }
+
+            .stat-number {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 0
+ </style>
+    <style>
+        .features-ultra-premium {
+            padding: 12rem 0;
+            background: linear-gradient(180deg, var(--darker), var(--dark));
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        /* Animated Background Effect */
+        .features-ultra-premium::before,
+        .features-ultra-premium::after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            z-index: 0;
+            background: radial-gradient(circle at center, rgba(4,106,185,0.03) 0%, transparent 25%);
+            animation: rotate 60s linear infinite;
+            pointer-events: none;
+        }
+
+        .features-ultra-premium::after {
+            animation: rotate 40s linear infinite reverse;
+            background: radial-gradient(circle at center, rgba(198,40,52,0.02) 0%, transparent 25%);
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .features-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 max(2rem, 5vw);
+            position: relative;
+            z-index: 1;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 10rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .features-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .features-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--gray-400);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(2rem, 4vw, 4rem);
+            perspective: 1000px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.01);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 30px;
+            padding: clamp(2rem, 4vw, 4rem);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px) rotateX(10deg);
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: calc(var(--delay) * 0.1s);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(4,106,185,0.1),
+                rgba(198,40,52,0.1)
+            );
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 
+                0 20px 40px rgba(0,0,0,0.3),
+                0 0 100px rgba(4,106,185,0.1);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon-wrapper {
+            width: 100px;
+            height: 100px;
+            background: rgba(4,106,185,0.1);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .feature-icon-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .feature-card:hover .feature-icon-wrapper {
+            transform: scale(1.1) rotate(-5deg);
+            background: transparent;
+        }
+
+        .feature-card:hover .feature-icon-wrapper::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            transition: all 0.6s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+            background: #fff;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--light);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .feature-description {
+            color: var(--gray-400);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--gray-300);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            color: var(--light);
+            transform: translateX(5px);
+        }
+
+        .feature-check {
+            width: 24px;
+            height: 24px;
+            background: rgba(4,106,185,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover .feature-check {
+            background: var(--primary);
+            color: var(--light);
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px) rotateX(10deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-ultra-premium {
+                padding: 6rem 0;
+            }
+            
+            .feature-card {
+                padding: 2rem;
+            }
+        }
+
+        /* Glassmorphism effect for modern browsers */
+        @supports (backdrop-filter: blur(10px)) {
+            .feature-card {
+                background: rgba(255,255,255,0.02);
+                backdrop-filter: blur(10px);
+            }
+        }
+    </style>
+
+    <div class="features-container">
+        <header class="features-header">
+            <h2 class="features-title">Elevating Climate Excellence</h2>
+            <p class="features-subtitle">Discover why industry leaders trust SNP Air Conditioning for their premium climate control needs</p>
+        </header>
+
+        <div class="features-grid">
+            <!-- Premium Quality -->
+            <div class="feature-card" style="--delay: 1">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-crown feature-icon"></i>
+                </div>
+                <h3 class="feature-title">Unmatched Quality</h3>
+                <p class="feature-description">Setting the gold standard in climate control with premium systems and meticulous attention to detail.</p>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Premium Brand Partnerships</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Industry-Leading Warranties</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Certified Excellence</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Innovation -->
+            <div class="feature-card" style="--delay: 2">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-microchip feature-icon"></i>
+                </div>
+                <h3 class="feature-title">Smart Innovation</h3>
+                <p class="feature-description">Pioneering intelligent climate solutions with cutting-edge technology and automation.</p>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>AI-Powered Control</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Smart Home Integration</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Predictive Maintenance</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Expertise -->
+            <div class="feature-card" style="--delay: 3">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-certificate feature-icon"></i>
+                </div>
+                <h3 class="feature-title">Master Expertise</h3>
+                <p class="feature-description">Elite team of certified specialists delivering precision installation and service.</p>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Master Certified Team</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Continuous Training</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-check"><i class="fas fa-check"></i></span>
+                        <span>Project Excellence</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = `${entry.target.dataset.delay * 0.1}s`;
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        // Observe all feature cards
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.dataset.delay = index;
+            observer.observe(card);
+        });
+
+        // Mouse movement effect for cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const xPercent = x / rect.width;
+                const yPercent = y / rect.height;
+
+                const rotateX = (yPercent - 0.5) * 10;
+                const rotateY = (xPercent - 0.5) * 10;
+
+                card.style.transform = `
+                    perspective(1000px)
+                    rotateX(${-rotateX}deg)
+                    rotateY(${rotateY}deg)
+                    translateY(-10px)
+                    scale(1.02)
+                `;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    </script>
+</section>
+<section class="projects-showcase" aria-label="Featured Projects">
+    <style>
+        .projects-showcase {
+            padding: 12rem 0;
+            background: linear-gradient(to bottom, var(--dark), var(--darker));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .projects-showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(4,106,185,0.05) 0%, transparent 30%),
+                radial-gradient(circle at 80% 80%, rgba(198,40,52,0.05) 0%, transparent 30%);
+            pointer-events: none;
+        }
+
+        .showcase-container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 max(2rem, 5vw);
+            position: relative;
+            z-index: 2;
+        }
+
+        .showcase-header {
+            text-align: center;
+            margin-bottom: 10rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .showcase-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+        }
+
+        .showcase-description {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--gray-400);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(2rem, 4vw, 4rem);
+        }
+
+        .project-card {
+            position: relative;
+            background: rgba(255,255,255,0.02);
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: calc(var(--delay) * 0.2s);
+        }
+
+        .project-image {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.1);
+            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                rgba(0,0,0,0.8)
+            );
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-type {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: var(--light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-type {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .project-content {
+            padding: 3rem;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0.02),
+                rgba(255,255,255,0.01)
+            );
+            backdrop-filter: blur(10px);
+        }
+
+        .project-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--light);
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-title {
+            color: var(--primary);
+        }
+
+        .project-details {
+            color: var(--gray-400);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .project-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--gray-300);
+            transition: all 0.3s ease;
+        }
+
+        .spec-item:hover {
+            color: var(--light);
+            transform: translateX(5px);
+        }
+
+        .spec-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(4,106,185,0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .spec-item:hover .spec-icon {
+            background: var(--primary);
+            color: var(--light);
+            transform: scale(1.1) rotate(-10deg);
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(4,106,185,0.3);
+        }
+
+        .project-link:hover::before {
+            opacity: 1;
+        }
+
+        .project-link i {
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .project-link:hover i {
+            transform: translateX(5px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .showcase-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-showcase {
+                padding: 6rem 0;
+            }
+            
+            .project-specs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+<div class="showcase-container">
+            <div class="showcase-header">
+                <h2 class="showcase-title">Featured Projects</h2>
+                <p class="showcase-description">Discover our exceptional climate control solutions for prestigious properties</p>
+            </div>
+
+            <div class="showcase-grid">
+                <!-- Luxury Home Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" 
+                             alt="Luxury Home Installation"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-type">Residential</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Luxury Residence</h3>
+                        <p class="project-details">Complete smart climate control system for a prestigious 500sqm residence in Applecross, featuring multi-zone control and energy optimization.</p>
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-home spec-icon"></i>
+                                <span>500sqm Coverage</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-thermometer-half spec-icon"></i>
+                                <span>8 Smart Zones</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-mobile-alt spec-icon"></i>
+                                <span>Mobile Control</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-leaf spec-icon"></i>
+                                <span>Energy Efficient</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project Details
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Commercial Office -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Commercial Office Space"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-type">Commercial</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Premium Office Tower</h3>
+                        <p class="project-details">State-of-the-art HVAC implementation for a modern office complex in Perth CBD, featuring AI-driven climate optimization.</p>
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-building spec-icon"></i>
+                                <span>12 Floors</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users spec-icon"></i>
+                                <span>500+ Capacity</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-brain spec-icon"></i>
+                                <span>AI Control</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt spec-icon"></i>
+                                <span>Smart Efficiency</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project Details
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Healthcare Facility -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" 
+                             alt="Healthcare Facility"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-type">Healthcare</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Medical Center</h3>
+                        <p class="project-details">Precision climate control system for a leading medical facility, maintaining strict environmental standards and air quality.</p>
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-hospital spec-icon"></i>
+                                <span>Medical Grade</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-shield-alt spec-icon"></i>
+                                <span>HEPA Filtration</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-temperature-high spec-icon"></i>
+                                <span>±0.5°C Control</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-clock spec-icon"></i>
+                                <span>24/7 Monitoring</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project Details
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Retail Complex -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Modern Shopping Center"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-type">Retail</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Luxury Retail Precinct</h3>
+                        <p class="project-details">Comprehensive climate solution for Perth's premium shopping destination, featuring advanced zoning and energy management.</p>
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-shopping-bag spec-icon"></i>
+                                <span>15 Zones</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-expand-alt spec-icon"></i>
+                                <span>5000sqm Area</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-sync-alt spec-icon"></i>
+                                <span>Smart Ventilation</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-chart-pie spec-icon"></i>
+                                <span>Load Balancing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project Details
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = `${entry.target.dataset.delay * 0.2}s`;
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        // Observe all project cards
+        document.querySelectorAll('.project-card').forEach((card, index) => {
+            card.dataset.delay = index;
+            observer.observe(card);
+        });
+
+        // Optional: Add parallax effect to project images
+        document.querySelectorAll('.project-image').forEach(image => {
+            window.addEventListener('scroll', () => {
+                const rect = image.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const scrolled = window.pageYOffset;
+                    const rate = scrolled * 0.05;
+                    image.style.transform = `translateY(${rate}px)`;
+                }
+            });
+        });
+    </script>
+</section>
+    <!-- Testimonials Section -->
+<section class="reviews-premium">
+    <style>
+        .reviews-premium {
+            padding: 12rem 0;
+            background: linear-gradient(180deg, var(--darker), var(--dark));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 6rem;
+            padding: 0 2rem;
+        }
+
+        .reviews-title {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        .reviews-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(10px);
+            border-radius: 100px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .reviews-badge img {
+            width: 24px;
+            height: auto;
+        }
+
+        .reviews-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--light);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .reviews-stars {
+            color: #FFC107;
+        }
+
+        .reviews-scroll {
+            position: relative;
+            overflow: hidden;
+            margin: 0 -2rem;
+            padding: 2rem;
+            -webkit-mask-image: linear-gradient(
+                to right,
+                transparent,
+                black 10%,
+                black 90%,
+                transparent
+            );
+            mask-image: linear-gradient(
+                to right,
+                transparent,
+                black 10%,
+                black 90%,
+                transparent
+            );
+        }
+
+        .reviews-track {
+            display: flex;
+            gap: 2rem;
+            width: max-content;
+            animation: scrollX 50s linear infinite;
+        }
+
+        @keyframes scrollX {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .review-card {
+            width: 400px;
+            height: 400px;
+            padding: 3rem;
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 24px;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.03);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .review-content {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray-200);
+            position: relative;
+            padding-left: 2rem;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 9;
+            -webkit-box-orient: vertical;
+        }
+
+        .review-content::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 3rem;
+            line-height: 1;
+            color: var(--primary);
+            font-family: Georgia, serif;
+            opacity: 0.5;
+        }
+
+        .review-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(
+                to right,
+                transparent,
+                rgba(255,255,255,0.1),
+                transparent
+            );
+            margin: 1.5rem 0;
+        }
+
+        .review-footer {
+            text-align: center;
+        }
+
+        .author-name {
+            color: var(--light);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-stars {
+            color: #FFC107;
+            font-size: 0.9rem;
+        }
+
+        .reviews-track:hover {
+            animation-play-state: paused;
+        }
+
+        @media (max-width: 768px) {
+            .reviews-premium {
+                padding: 6rem 0;
+            }
+
+            .review-card {
+                width: 300px;
+                height: 350px;
+                padding: 2rem;
+            }
+
+            .review-content {
+                font-size: 1rem;
+                -webkit-line-clamp: 8;
+            }
+        }
+    </style>
+
+    <div class="reviews-header">
+        <h2 class="reviews-title">Customer Reviews</h2>
+        <div class="reviews-badge">
+            <img src="https://i.postimg.cc/Qxk5GyLn/imgbin-google-logo-google-adwords-g-suite-google-account-png-removebg-preview.webp" 
+                 alt="Google Reviews">
+            <div class="reviews-rating">
+                <div class="reviews-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>4.9 from 127 reviews</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-scroll">
+        <div class="reviews-track" id="reviewsTrack">
+            <!-- Original Reviews -->
+            <div class="review-card">
+                <div class="review-content">
+                    Sam's team turned up on time and did such a great job. They were professional and courteous. They cleaned our 2 units plus repaired the installation that another tradesman had incorrectly installed previously. They went above and beyond and the price was so reasonable.
+                </div>
+                <div class="review-divider"></div>
+                <div class="review-footer">
+                    <div class="author-name">Padraig Hurley</div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-content">
+                    Sam did an excellent job installing our air conditioning. He came out and gave us a very competitive quote. Sam gave us good advice on the installation options. He installed our split system efficiently and quickly. Very professional. Overall we are very happy with the work.
+                </div>
+                <div class="review-divider"></div>
+                <div class="review-footer">
+                    <div class="author-name">Ignace M</div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-content">
+                    I couldn't be happier with the service provided by Sam and his assistant, Richard! They recently installed two Fujitsu reverse cycle air-conditioning units in our home, and their work exceeded all expectations. Sam's professionalism and wealth of experience were evident throughout.
+                </div>
+                <div class="review-divider"></div>
+                <div class="review-footer">
+                    <div class="author-name">Bernadette C</div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-content">
+                    Sam and Richard are champions to deal with. Very happy I went with SNP after getting a few quotes for ducted air conditioning. They took extreme care with my 100 year old ceilings. They cleaned up after themselves completely.
+                </div>
+                <div class="review-divider"></div>
+                <div class="review-footer">
+                    <div class="author-name">Nader F</div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-content">
+                    Thank you to Sam from SNP air conditioning. The service was professional, friendly and very trustworthy. Sam arrived at the time he said he would. Thank you again Sam for your kindness and reassurance… and for showing me how to clean the filters!
+                </div>
+                <div class="review-divider"></div>
+                <div class="review-footer">
+                    <div class="author-name">Karli Guilfoyle</div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('reviewsTrack');
+            const cards = track.querySelectorAll('.review-card');
+            
+            // Clone cards for infinite scroll
+            cards.forEach(card => {
+                const clone = card.cloneNode(true);
+                track.appendChild(clone);
+            });
+
+            // Touch scroll handling
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let animationFrameId;
+
+            track.addEventListener('mousedown', (e) => {
+                isDown = true;
+                track.style.animationPlayState = 'paused';
+                startX = e.pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+            });
+
+            track.addEventListener('mouseleave', () => {
+                isDown = false;
+                track.style.animationPlayState = 'running';
+            });
+
+            track.addEventListener('mouseup', () => {
+                isDown = false;
+                track.style.animationPlayState = 'running';
+            });
+
+            track.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - track.offsetLeft;
+                const walk = (x - startX) * 2;
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = requestAnimationFrame(() => {
+                    track.scrollLeft = scrollLeft - walk;
+                });
+            });
+
+            // Touch events for mobile
+            track.addEventListener('touchstart', (e) => {
+                isDown = true;
+                track.style.animationPlayState = 'paused';
+                startX = e.touches[0].pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+            });
+
+            track.addEventListener('touchend', () => {
+                isDown = false;
+                track.style.animationPlayState = 'running';
+            });
+
+            track.addEventListener('touchmove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.touches[0].pageX - track.offsetLeft;
+                const walk = (x - startX) * 2;
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = requestAnimationFrame(() => {
+                    track.scrollLeft = scrollLeft - walk;
+                });
+            });
+        });
+    </script>
+</section>
+<!-- Process Steps Section -->
+    <section class="process-premium" id="process">
+        <style>
+            .process-premium {
+                padding: 8rem 0;
+                background: var(--darker);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .process-premium::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle at 0% 0%, rgba(4,106,185,0.05) 0%, transparent 50%);
+            }
+
+            .process-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .process-header {
+                text-align: center;
+                margin-bottom: 6rem;
+            }
+
+            .process-title {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                font-weight: 800;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 1.5rem;
+            }
+
+            .process-subtitle {
+                color: var(--gray-400);
+                font-size: 1.2rem;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .timeline {
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .timeline::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            }
+
+            .timeline-item {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 30px;
+                position: relative;
+                margin: 100px 0;
+                width: 50%;
+            }
+
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 30px;
+                padding-right: 0;
+                margin-left: 50%;
+            }
+
+            .timeline-dot {
+                position: absolute;
+                right: -11px;
+                width: 22px;
+                height: 22px;
+                background: var(--primary);
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+            .timeline-item:nth-child(even) .timeline-dot {
+                right: auto;
+                left: -11px;
+            }
+
+            .timeline-content {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 20px;
+                padding: 2rem;
+                position: relative;
+                width: calc(100% - 40px);
+                transition: all 0.4s ease;
+            }
+
+            .timeline-content:hover {
+                transform: translateY(-5px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+
+            .timeline-number {
+                position: absolute;
+                top: -20px;
+                left: 20px;
+                font-size: 4rem;
+                font-weight: 800;
+                color: var(--primary);
+                opacity: 0.1;
+            }
+
+            .timeline-title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--light);
+                margin-bottom: 1rem;
+            }
+
+            .timeline-description {
+                color: var(--gray-400);
+                line-height: 1.7;
+                margin-bottom: 1.5rem;
+            }
+
+            .timeline-features {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .timeline-feature {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                color: var(--gray-300);
+                font-size: 0.9rem;
+            }
+
+            .timeline-icon {
+                color: var(--primary);
+                font-size: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                .timeline::before {
+                    left: 0;
+                }
+
+                .timeline-item,
+                .timeline-item:nth-child(even) {
+                    width: 100%;
+                    padding-left: 30px;
+                    padding-right: 0;
+                    margin-left: 0;
+                }
+
+                .timeline-dot,
+                .timeline-item:nth-child(even) .timeline-dot {
+                    left: -11px;
+                    right: auto;
+                }
+            }
+        </style>
+
+        <div class="process-container">
+            <div class="process-header">
+                <h2 class="process-title">Our Installation Process</h2>
+                <p class="process-subtitle">A systematic approach to ensuring perfect climate control</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Consultation -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-number">01</div>
+                        <h3 class="timeline-title">Initial Consultation</h3>
+                        <p class="timeline-description">
+                            Comprehensive assessment of your space and requirements to design the perfect climate solution.
+                        </p>
+                        <div class="timeline-features">
+                            <div class="timeline-feature">
+                                <i class="fas fa-clipboard-check timeline-icon"></i>
+                                <span>Site Assessment</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-comments timeline-icon"></i>
+                                <span>Requirements Analysis</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-calculator timeline-icon"></i>
+                                <span>Load Calculations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Design -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-number">02</div>
+                        <h3 class="timeline-title">System Design</h3>
+                        <p class="timeline-description">
+                            Custom design of your air conditioning system considering efficiency, aesthetics, and performance.
+                        </p>
+                        <div class="timeline-features">
+                            <div class="timeline-feature">
+                                <i class="fas fa-drafting-compass timeline-icon"></i>
+                                <span>Custom Planning</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-project-diagram timeline-icon"></i>
+                                <span>System Layout</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-ruler-combined timeline-icon"></i>
+                                <span>Detailed Specifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Installation -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-number">03</div>
+                        <h3 class="timeline-title">Professional Installation</h3>
+                        <p class="timeline-description">
+                            Expert installation by certified technicians ensuring optimal system performance.
+                        </p>
+                        <div class="timeline-features">
+                            <div class="timeline-feature">
+                                <i class="fas fa-tools timeline-icon"></i>
+                                <span>Expert Team</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-shield-alt timeline-icon"></i>
+                                <span>Safety Standards</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-clock timeline-icon"></i>
+                                <span>Timely Completion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-number">04</div>
+                        <h3 class="timeline-title">System Testing</h3>
+                        <p class="timeline-description">
+                            Comprehensive testing and optimization of your new system for peak performance.
+                        </p>
+                        <div class="timeline-features">
+                            <div class="timeline-feature">
+                                <i class="fas fa-thermometer-half timeline-icon"></i>
+                                <span>Performance Check</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-tachometer-alt timeline-icon"></i>
+                                <span>Efficiency Testing</span>
+                            </div>
+                            <div class="timeline-feature">
+                                <i class="fas fa-check-double timeline-icon"></i>
+                                <span>Quality Assurance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="team-premium" id="team">
+        <style>
+            .team-premium {
+                padding: 8rem 0;
+                background: linear-gradient(to bottom, var(--dark), var(--darker));
+                position: relative;
+                overflow: hidden;
+            }
+
+            .team-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .team-header {
+                text-align: center;
+                margin-bottom: 6rem;
+            }
+
+            .team-title {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                font-weight: 800;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 1.5rem;
+            }
+
+            .team-subtitle {
+                color: var(--gray-400);
+                font-size: 1.2rem;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+            }
+
+            .team-member {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 20px;
+                overflow: hidden;
+                transition: all 0.4s ease;
+            }
+
+            .team-member:hover {
+                transform: translateY(-10px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+
+            .member-image {
+                position: relative;
+                height: 300px;
+                overflow: hidden;
+            }
+
+            .member-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+
+            .team-member:hover .member-image img {
+                transform: scale(1.1);
+            }
+
+            .member-overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 2rem;
+                background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+                transform: translateY(100%);
+                transition: transform 0.4s ease;
+            }
+
+            .team-member:hover .member-overlay {
+                transform: translateY(0);
+            }
+
+            .member-social {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--primary);
+                color: var(--light);
+                border-radius: 50%;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .social-link:hover {
+                background: var(--secondary);
+                transform: translateY(-3px);
+            }
+
+            .member-info {
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .member-name {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--light);
+                margin-bottom: 0.5rem;
+            }
+
+            .member-role {
+                color: var(--primary);
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .member-credentials {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .credential-badge {
+                background: rgba(4,106,185,0.1);
+                color: var(--primary);
+                padding: 0.5rem 1rem;
+                border-radius: 50px;
+                font-size: 0.9rem;
+            }
+
+            @media (max-width: 1200px) {
+                .team-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (max-width: 992px) {
+                .team-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 576px) {
+                .team-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <div class="team-container">
+            <div class="team-header">
+                <h2 class="team-title">Expert Team</h2>
+                <p class="team-subtitle">Meet our certified HVAC professionals</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/api/placeholder/400/500" alt="Team Member">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">John Anderson</h3>
+                        <p class="member-role">Technical Director</p>
+                        <div class="member-credentials">
+                            <span class="credential-badge">HVAC Certified</span>
+                            <span class="credential-badge">20+ Years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/api/placeholder/400/500" alt="Team Member">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Sarah Zhang</h3>
+                        <p class="member-role">Systems Engineer</p>
+                        <div class="member-credentials">
+                            <span class="credential-badge">MEP Expert</span>
+                            <span class="credential-badge">15+ Years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/api/placeholder/400/500" alt="Team Member">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Michael Thompson</h3>
+                        <p class="member-role">Installation Manager</p>
+                        <div class="member-credentials">
+                            <span class="credential-badge">Certified Tech</span>
+                            <span class="credential-badge">12+ Years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/api/placeholder/400/500" alt="Team Member">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Emily Chen</h3>
+                        <p class="member-role">Service Coordinator</p>
+                        <div class="member-credentials">
+                            <span class="credential-badge">Customer Service</span>
+                            <span class="credential-badge">8+ Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-premium" id="contact">
+        <style>
+            .contact-premium {
+                padding: 8rem 0;
+                background: var(--darker);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .contact-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .contact-header {
+                text-align: center;
+                margin-bottom: 6rem;
+            }
+
+            .contact-title {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                font-weight: 800;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 1.5rem;
+            }
+
+            .contact-subtitle {
+                color: var(--gray-400);
+                font-size: 1.2rem;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                gap: 4rem;
+            }
+
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .info-card {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 20px;
+                padding: 2rem;
+                transition: all 0.4s ease;
+            }
+
+            .info-card:hover {
+                transform: translateY(-5px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+
+            .info-icon {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 1rem;
+            }
+
+            .info-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--light);
+                margin-bottom: 0.5rem;
+            }
+
+            .info-content {
+                color: var(--gray-400);
+                line-height: 1.6;
+            }
+
+            .info-link {
+                color: var(--primary);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .info-link:hover {
+                color: var(--secondary);
+            }
+
+            .contact-form {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 20px;
+                padding: 3rem;
+            }
+
+            .form-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .form-group {
+                margin-bottom: 2rem;
+            }
+
+            .form-group.full {
+                grid-column: 1 / -1;
+            }
+
+            .form-label {
+                display: block;
+                color: var(--gray-300);
+                margin-bottom: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 1rem;
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 10px;
+                color: var(--light);
+                transition: all 0.3s ease;
+            }
+
+            .form-input:focus {
+                outline: none;
+                border-color: var(--primary);
+                background: rgba(255,255,255,0.08);
+                box-shadow: 0 0 0 3px rgba(4,106,185,0.1);
+            }
+
+            .form-textarea {
+                height: 150px;
+                resize: vertical;
+            }
+
+            .form-submit {
+                grid-column: 1 / -1;
+                background: var(--gradient-primary);
+                color: var(--light);
+                border: none;
+                border-radius: 10px;
+                padding: 1.2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .form-submit:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 20px 40px rgba(4,106,185,0.3);
+            }
+
+            @media (max-width: 992px) {
+                .contact-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .form-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">Contact Us</h2>
+                <p class="contact-subtitle">Get in touch for premium air conditioning solutions</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt info-icon"></i>
+                        <h3 class="info-title">Call Us</h3>
+                        <p class="info-content">
+                            24/7 Emergency Service
+                            <br>
+                            <a href="tel:0413816375" class="info-link">0413 816 375</a>
+                        </p>
+                        </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope info-icon"></i>
+                        <h3 class="info-title">Email Us</h3>
+                        <p class="info-content">
+                            For Quotes & Inquiries
+                            <br>
+                            <a href="mailto:info@snpaircon.com.au" class="info-link">info@snpaircon.com.au</a>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <h3 class="info-title">Visit Us</h3>
+                        <p class="info-content">
+                            123 Climate Street
+                            <br>
+                            New South Wales, WA 6000
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-clock info-icon"></i>
+                        <h3 class="info-title">Hours</h3>
+                        <p class="info-content">
+                            Monday - Friday: 7am - 5pm
+                            <br>
+                            Emergency Service: 24/7
+                        </p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Service Type *</label>
+                            <select class="form-input" required>
+                                <option value="">Select Service</option>
+                                <option value="installation">New Installation</option>
+                                <option value="repair">Repairs & Service</option>
+                                <option value="commercial">Commercial HVAC</option>
+                                <option value="maintenance">Maintenance Plan</option>
+                                <option value="emergency">Emergency Service</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label">Property Type *</label>
+                            <select class="form-input" required>
+                                <option value="">Select Property Type</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="industrial">Industrial</option>
+                                <option value="retail">Retail</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label">Message *</label>
+                            <textarea class="form-input form-textarea" required placeholder="Please describe your requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label">Preferred Contact Time</label>
+                            <select class="form-input">
+                                <option value="">Select Time</option>
+                                <option value="morning">Morning (7am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                                <option value="emergency">Urgent - Call ASAP</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            Send Request
+                            <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-premium">
+        <style>
+            .footer-premium {
+                padding: 6rem 0 2rem;
+                background: var(--darker);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .footer-premium::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(to right,
+                    transparent,
+                    var(--primary),
+                    transparent
+                );
+            }
+
+            .footer-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 2fr repeat(3, 1fr);
+                gap: 4rem;
+                margin-bottom: 4rem;
+            }
+
+            .footer-brand {
+                padding-right: 2rem;
+            }
+
+            .footer-logo {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: var(--light);
+                text-decoration: none;
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+
+            .footer-description {
+                color: var(--gray-400);
+                margin-bottom: 2rem;
+                line-height: 1.7;
+            }
+
+            .social-links {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                background: rgba(255,255,255,0.05);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--light);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .social-link:hover {
+                background: var(--primary);
+                transform: translateY(-3px);
+            }
+
+            .footer-column h4 {
+                color: var(--light);
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .footer-links {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-links li {
+                margin-bottom: 0.8rem;
+            }
+
+            .footer-link {
+                color: var(--gray-400);
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .footer-link:hover {
+                color: var(--primary);
+                transform: translateX(5px);
+            }
+
+            .footer-bottom {
+                padding-top: 2rem;
+                border-top: 1px solid rgba(255,255,255,0.05);
+                text-align: center;
+                color: var(--gray-400);
+            }
+
+            @media (max-width: 992px) {
+                .footer-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 576px) {
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">SNP AIR CONDITIONING</a>
+                    <p class="footer-description">
+                        New South Wales's leading provider of premium air conditioning solutions. Specializing in residential and commercial HVAC services with a commitment to excellence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#services" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Residential AC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Commercial HVAC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Emergency Repairs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Maintenance Plans
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Warranty Info
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 SNP Air Conditioning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const submitButton = this.querySelector('.form-submit');
+                const originalText = submitButton.innerHTML;
+
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitButton.disabled = true;
+
+                setTimeout(() => {
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Request Sent';
+                    submitButton.style.background = 'linear-gradient(135deg, #28a745, #218838)';
+
+                    setTimeout(() => {
+                        submitButton.innerHTML = originalText;
+                        submitButton.style.background = '';
+                        submitButton.disabled = false;
+                        contactForm.reset();
+                    }, 3000);
+                }, 2000);
+            });
+        }
+
+        // Loader Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            const progress = document.querySelector('.loader-progress');
+            const percentage = document.querySelector('.loader-percentage');
+            let progressValue = 0;
+
+            function updateLoader() {
+                progressValue += (100 - progressValue) * 0.1;
+                
+                if (progressValue >= 99.9) {
+                    progressValue = 100;
+                    progress.style.width = '100%';
+                    percentage.textContent = '100%';
+                    
+                    setTimeout(() => {
+                        loader.classList.add('hidden');
+                    }, 500);
+                    
+                    return;
+                }
+
+                progress.style.width = `${progressValue}%`;
+                percentage.textContent = `${Math.round(progressValue)}%`;
+                requestAnimationFrame(updateLoader);
+            }
+
+            setTimeout(() => {
+                requestAnimationFrame(updateLoader);
+            }, 300);
+        });
+    </script>
+</body>
+</html>
