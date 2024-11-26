@@ -6,13 +6,13 @@
     
     <!-- SEO Optimization -->
     <title>SNP AIR CONDITIONING | Premium HVAC Services New South Wales</title>
-    <meta name="description" content="New South Wales's premium air conditioning installation & service specialists. 24/7 dedicated service for residential and commercial climate control solutions.">
+    <meta name="description" content="Inner West premium air conditioning installation & service specialists. 24/7 dedicated service for residential and commercial climate control solutions.">
     <meta name="keywords" content="air conditioning New South Wales, hvac services, commercial air conditioning, residential cooling, premium ac installation">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="SNP AIR CONDITIONING | Premium HVAC Services">
-    <meta property="og:description" content="New South Wales's premium air conditioning installation & service specialists">
+    <meta property="og:description" content="Inner West premium air conditioning installation & service specialists">
     <meta property="og:image" content="/api/placeholder/1200/630">
     
     <!-- Fonts -->
@@ -390,7 +390,7 @@
            <img src="https://i.postimg.cc/pLBCf32b/2023-09-04.jpg" alt="Modern Air Conditioned Home Interior">
         </div>
         <div class="hero-content">
-            <div class="hero-pretitle">New South Wales's Premium Climate Solutions</div>
+            <div class="hero-pretitle">Inner West Premium Climate Solutions</div>
             <h1 class="hero-title">Climate Control Excellence</h1>
             <p class="hero-subtitle">Expert air conditioning installation, service, and maintenance for residential and commercial properties.</p>
             <a href="#contact" class="hero-cta">
@@ -409,175 +409,316 @@
     </div>
 <!-- Services Section -->
     <section class="services-premium" id="services">
-        <style>
-            .services-premium {
-                --premium-dark: #0A0A0A;
-                --premium-light: #FFFFFF;
-                padding: 8rem 0;
-                background: var(--premium-dark);
-                position: relative;
-                overflow: hidden;
-            }
+  <style>
+  /* Container */
+.services-premium {
+    --premium-dark: #0B1120;
+    --premium-accent: #2563EB;
+    --premium-light: #FFFFFF;
+    --premium-gray: #94A3B8;
+    padding: 10rem 0;
+    background: radial-gradient(circle at 50% 50%, var(--premium-dark) 0%, #070B14 100%);
+    position: relative;
+    overflow: hidden;
+}
 
-            .services-container {
-                max-width: 1600px;
-                margin: 0 auto;
-                padding: 0 2rem;
-            }
+.services-premium::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563EB' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    top: -25%;
+    left: -25%;
+    animation: backgroundFloat 60s linear infinite;
+    pointer-events: none;
+}
 
-            .services-header {
-                text-align: center;
-                margin-bottom: 6rem;
-            }
+.services-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
 
-            .services-title {
-                font-size: clamp(2.5rem, 5vw, 4rem);
-                font-weight: 800;
-                background: var(--gradient-primary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin-bottom: 1.5rem;
-            }
+/* Header Styles */
+.services-header {
+    text-align: center;
+    margin-bottom: 8rem;
+    position: relative;
+}
 
-            .services-subtitle {
-                color: var(--gray-300);
-                font-size: 1.25rem;
-                max-width: 800px;
-                margin: 0 auto;
-                line-height: 1.6;
-            }
+.services-title {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #60A5FA 0%, #2563EB 50%, #1E40AF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
 
-            .services-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2.5rem;
-                margin-top: 2rem;
-            }
+.services-subtitle {
+    color: var(--premium-gray);
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 400;
+}
 
-            .service-card {
-                height: 450px;
-                background: rgba(255,255,255,0.02);
-                border: 1px solid rgba(255,255,255,0.05);
-                border-radius: 20px;
-                padding: 3rem;
-                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                position: relative;
-                overflow: hidden;
-            }
+/* Animation */
+@keyframes backgroundFloat {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20%) rotate(360deg); }
+}
 
-            .service-card:hover {
-                transform: translateY(-10px) scale(1.02);
-                background: rgba(255,255,255,0.03);
-                box-shadow: 0 30px 60px rgba(0,0,0,0.25);
-            }
+/* Responsive Adjustments */
+@media (max-width: 1400px) {
+    .services-container {
+        padding: 0 3rem;
+    }
+    
+    .services-header {
+        margin-bottom: 6rem;
+    }
+}
 
-            .service-card::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: var(--gradient-primary);
-                opacity: 0;
-                transition: opacity 0.4s ease;
-                z-index: 1;
-            }
+@media (max-width: 768px) {
+    .services-premium {
+        padding: 6rem 0;
+    }
+    
+    .services-container {
+        padding: 0 1.5rem;
+    }
+    
+    .services-header {
+        margin-bottom: 4rem;
+    }
+    
+    .services-title {
+        font-size: clamp(2.5rem, 5vw, 3rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .services-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
 
-            .service-card:hover::before {
-                opacity: 0.05;
-            }
+@media (max-width: 480px) {
+    .services-premium {
+        padding: 4rem 0;
+    }
+    
+    .services-container {
+        padding: 0 1rem;
+    }
+    
+    .services-header {
+        margin-bottom: 3rem;
+    }
+}
 
-            .service-content {
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                z-index: 2;
-            }
+@media (prefers-reduced-motion: reduce) {
+    .services-premium::before {
+        animation: none;
+    }
+}
+      .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    perspective: 1000px;
+}
 
-            .service-icon {
-                font-size: 3.5rem;
-                margin-bottom: 2rem;
-                background: var(--gradient-primary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: transform 0.4s ease;
-            }
+.service-card {
+    height: 700px;
+    background: rgba(255,255,255,0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 24px;
+    padding: 3.5rem;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
 
-            .service-title {
-                font-size: 1.75rem;
-                font-weight: 700;
-                color: var(--light);
-                margin-bottom: 1.5rem;
-            }
+.service-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
 
-            .service-description {
-                color: var(--gray-300);
-                line-height: 1.7;
-                margin-bottom: 2rem;
-                flex-grow: 1;
-            }
+.service-top {
+    flex-grow: 0;
+    margin-bottom: auto;
+}
 
-            .service-features {
-                list-style: none;
-                padding: 0;
-                margin: 0 0 2rem 0;
-            }
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #60A5FA 0%, #2563EB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.4s ease;
+    display: block;
+}
 
-            .service-feature {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                margin-bottom: 0.75rem;
-                color: var(--gray-300);
-            }
+.service-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--premium-light);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
 
-            .feature-icon {
-                color: var(--primary);
-                font-size: 0.9rem;
-            }
+.service-description {
+    color: var(--premium-gray);
+    line-height: 1.8;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    min-height: 4.5rem; /* Ensures consistent height for descriptions */
+}
 
-            .service-link {
-                margin-top: auto;
-                display: inline-flex;
-                align-items: center;
-                gap: 0.75rem;
-                padding: 1rem 2rem;
-                background: var(--gradient-primary);
-                border-radius: 8px;
-                color: var(--light);
-                text-decoration: none;
-                font-weight: 600;
-                transition: all 0.3s ease;
-            }
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 144px; /* Ensures consistent height for feature lists */
+}
 
-            .service-link:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 10px 20px rgba(4, 106, 185, 0.2);
-            }
+.service-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--premium-gray);
+    font-size: 1.0625rem;
+    line-height: 1.5;
+}
 
-            @media (max-width: 1400px) {
-                .services-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
+.service-feature:last-child {
+    margin-bottom: 0;
+}
 
-            @media (max-width: 768px) {
-                .services-grid {
-                    grid-template-columns: 1fr;
-                }
-                .services-premium {
-                    padding: 4rem 0;
-                }
-                .service-card {
-                    height: auto;
-                    min-height: 400px;
-                }
-            }
-        </style>
+.feature-icon {
+    color: var(--premium-accent);
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.service-link {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+    border-radius: 12px;
+    color: var(--premium-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+/* Hover effects */
+.service-card:hover {
+    transform: translateY(-15px) rotateX(2deg) rotateY(-2deg);
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.1);
+    box-shadow: 
+        0 30px 60px rgba(0,0,0,0.3),
+        0 0 40px rgba(37, 99, 235, 0.1);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 15px 30px rgba(37, 99, 235, 0.2),
+        0 0 0 2px rgba(37, 99, 235, 0.4);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .service-card {
+        height: 650px;
+    }
+    
+    .service-description {
+        min-height: 5.4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-card {
+        padding: 2.5rem;
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-card {
+        height: auto;
+        min-height: 500px;
+        padding: 2rem;
+    }
+    
+    .service-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-title {
+        font-size: 1.625rem;
+    }
+    
+    .service-description {
+        font-size: 1rem;
+        min-height: 0;
+    }
+    
+    .service-features {
+        min-height: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .service-link {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+}
+  </style>
 
         <div class="services-container">
             <header class="services-header">
@@ -590,8 +731,8 @@
                 <div class="service-card">
                     <div class="service-content">
                         <i class="fas fa-home service-icon"></i>
-                        <h3 class="service-title">Residential Installation</h3>
-                        <p class="service-description">Expert installation of premium air conditioning systems for homes of all sizes. Tailored solutions for your comfort needs.</p>
+                        <h3 class="service-title">Home Installation</h3>
+                        <p class="service-description">Installation of air conditioning systems for homes of all sizes. Tailored solutions for your A/C needs.</p>
                         <ul class="service-features">
                             <li class="service-feature">
                                 <i class="fas fa-check feature-icon"></i>
@@ -645,7 +786,7 @@
                     <div class="service-content">
                         <i class="fas fa-tools service-icon"></i>
                         <h3 class="service-title">Emergency Repairs</h3>
-                        <p class="service-description">Fast response emergency repair service for all air conditioning systems. Available 24/7 for urgent situations.</p>
+                        <p class="service-description">Emergency repair service for all air conditioning systems. Available 24/7 for urgent situations.</p>
                         <ul class="service-features">
                             <li class="service-feature">
                                 <i class="fas fa-check feature-icon"></i>
@@ -726,7 +867,7 @@
                     <div class="service-content">
                         <i class="fas fa-wind service-icon"></i>
                         <h3 class="service-title">Ducted Systems</h3>
-                        <p class="service-description">Specialized installation and maintenance of ducted air conditioning systems for whole-home comfort.</p>
+                        <p class="service-description">Installation and maintenance of ducted air conditioning systems for home comfort.</p>
                         <ul class="service-features">
                             <li class="service-feature">
                                 <i class="fas fa-check feature-icon"></i>
@@ -756,23 +897,13 @@
         <style>
             .experience-premium {
                 padding: 8rem 0;
-                background: var(--darker);
+                background: #070b15;
                 position: relative;
                 overflow: hidden;
                 color: var(--light);
             }
 
-            .experience-premium::before {
-                content: '';
-                position: absolute;
-                top: -50%;
-                right: -50%;
-                width: 100%;
-                height: 200%;
-                background: linear-gradient(135deg, transparent 0%, rgba(4,106,185,0.03) 50%, transparent 100%);
-                transform: rotate(-15deg);
-                pointer-events: none;
-            }
+
 
             .experience-container {
                 max-width: 1400px;
@@ -837,6 +968,7 @@
                 line-height: 1;
                 margin-bottom: 0
  </style>
+   <section class="features-ultra-premium">
     <style>
         .features-ultra-premium {
             padding: 12rem 0;
@@ -930,30 +1062,6 @@
             animation-delay: calc(var(--delay) * 0.1s);
         }
 
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(4,106,185,0.1),
-                rgba(198,40,52,0.1)
-            );
-            opacity: 0;
-            transition: opacity 0.6s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 
-                0 20px 40px rgba(0,0,0,0.3),
-                0 0 100px rgba(4,106,185,0.1);
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
-        }
-
         .feature-icon-wrapper {
             width: 100px;
             height: 100px;
@@ -993,6 +1101,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             position: relative;
+            z-index: 1;
             transition: all 0.6s ease;
         }
 
@@ -1093,7 +1202,6 @@
             }
         }
 
-        /* Glassmorphism effect for modern browsers */
         @supports (backdrop-filter: blur(10px)) {
             .feature-card {
                 background: rgba(255,255,255,0.02);
@@ -1104,82 +1212,82 @@
 
     <div class="features-container">
         <header class="features-header">
-            <h2 class="features-title">Elevating Climate Excellence</h2>
-            <p class="features-subtitle">Discover why industry leaders trust SNP Air Conditioning for their premium climate control needs</p>
+            <h2 class="features-title">Premium Climate Solutions</h2>
+            <p class="features-subtitle">Experience superior comfort with our expert air conditioning services</p>
         </header>
 
         <div class="features-grid">
-            <!-- Premium Quality -->
+            <!-- Professional Installation -->
             <div class="feature-card" style="--delay: 1">
                 <div class="feature-icon-wrapper">
-                    <i class="fas fa-crown feature-icon"></i>
+                    <i class="fas fa-tools feature-icon"></i>
                 </div>
-                <h3 class="feature-title">Unmatched Quality</h3>
-                <p class="feature-description">Setting the gold standard in climate control with premium systems and meticulous attention to detail.</p>
+                <h3 class="feature-title">Expert Installation</h3>
+                <p class="feature-description">Professional installation services with meticulous attention to detail and quality craftsmanship.</p>
                 <ul class="feature-list">
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Premium Brand Partnerships</span>
+                        <span>Licensed Technicians</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Industry-Leading Warranties</span>
+                        <span>Quality Guaranteed</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Certified Excellence</span>
+                        <span>10-Year Warranty</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Innovation -->
+            <!-- Reliable Service -->
             <div class="feature-card" style="--delay: 2">
                 <div class="feature-icon-wrapper">
-                    <i class="fas fa-microchip feature-icon"></i>
+                    <i class="fas fa-clock feature-icon"></i>
                 </div>
-                <h3 class="feature-title">Smart Innovation</h3>
-                <p class="feature-description">Pioneering intelligent climate solutions with cutting-edge technology and automation.</p>
+                <h3 class="feature-title">24/7 Service</h3>
+                <p class="feature-description">Round-the-clock support and emergency services to keep your systems running perfectly.</p>
                 <ul class="feature-list">
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>AI-Powered Control</span>
+                        <span>Emergency Response</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Smart Home Integration</span>
+                        <span>Rapid Service</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Predictive Maintenance</span>
+                        <span>Expert Support</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Expertise -->
+            <!-- Quality Guarantee -->
             <div class="feature-card" style="--delay: 3">
                 <div class="feature-icon-wrapper">
-                    <i class="fas fa-certificate feature-icon"></i>
+                    <i class="fas fa-shield-alt feature-icon"></i>
                 </div>
-                <h3 class="feature-title">Master Expertise</h3>
-                <p class="feature-description">Elite team of certified specialists delivering precision installation and service.</p>
+                <h3 class="feature-title">Quality Assured</h3>
+                <p class="feature-description">Premium quality systems and services backed by our satisfaction guarantee.</p>
                 <ul class="feature-list">
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Master Certified Team</span>
+                        <span>Premium Brands</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Continuous Training</span>
+                        <span>Service Guarantee</span>
                     </li>
                     <li class="feature-item">
                         <span class="feature-check"><i class="fas fa-check"></i></span>
-                        <span>Project Excellence</span>
+                        <span>Expert Maintenance</span>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
+</section>
     <script>
         // Intersection Observer for scroll animations
         const observer = new IntersectionObserver((entries) => {
@@ -2632,543 +2740,699 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-premium" id="contact">
-        <style>
-            .contact-premium {
-                padding: 8rem 0;
-                background: var(--darker);
-                position: relative;
-                overflow: hidden;
-            }
+<section class="contact-premium" id="contact">
+    <style>
+        .contact-premium {
+            padding: 8rem 0;
+            background: linear-gradient(to bottom, var(--darker), #030407);
+            position: relative;
+            overflow: hidden;
+        }
 
-            .contact-container {
-                max-width: var(--container-max);
-                margin: 0 auto;
-                padding: 0 var(--container-padding);
-                position: relative;
-                z-index: 2;
-            }
+        .contact-premium::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(4,106,185,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(198,40,52,0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
 
-            .contact-header {
-                text-align: center;
-                margin-bottom: 6rem;
-            }
+        .contact-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 max(2rem, 5vw);
+            position: relative;
+            z-index: 2;
+        }
 
-            .contact-title {
-                font-size: clamp(2.5rem, 5vw, 4rem);
-                font-weight: 800;
-                background: var(--gradient-primary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin-bottom: 1.5rem;
-            }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
 
-            .contact-subtitle {
-                color: var(--gray-400);
-                font-size: 1.2rem;
-                max-width: 700px;
-                margin: 0 auto;
-            }
+        .contact-pretitle {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
 
-            .contact-grid {
-                display: grid;
-                grid-template-columns: 1fr 1.5fr;
-                gap: 4rem;
-            }
+        .contact-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
 
-            .contact-info {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-            }
+        .contact-subtitle {
+            color: var(--gray-400);
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
 
-            .info-card {
-                background: rgba(255,255,255,0.02);
-                border: 1px solid rgba(255,255,255,0.05);
-                border-radius: 20px;
-                padding: 2rem;
-                transition: all 0.4s ease;
-            }
+        .contact-form-wrapper {
+            position: relative;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
 
-            .info-card:hover {
-                transform: translateY(-5px);
-                background: rgba(255,255,255,0.03);
-                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-            }
+        .contact-form {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 24px;
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
 
-            .info-icon {
-                font-size: 2rem;
-                color: var(--primary);
-                margin-bottom: 1rem;
-            }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
 
-            .info-title {
-                font-size: 1.2rem;
-                font-weight: 600;
-                color: var(--light);
-                margin-bottom: 0.5rem;
-            }
+        .form-group {
+            position: relative;
+        }
 
-            .info-content {
-                color: var(--gray-400);
-                line-height: 1.6;
-            }
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
 
-            .info-link {
-                color: var(--primary);
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
+        .form-label {
+            display: block;
+            color: var(--gray-300);
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
 
-            .info-link:hover {
-                color: var(--secondary);
-            }
+        .form-input {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            color: var(--light);
+            font-size: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 0 0 4px rgba(4,106,185,0.1);
+        }
+
+        .form-input::placeholder {
+            color: var(--gray-500);
+        }
+
+        .form-textarea {
+            height: 150px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-position: right 1rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em;
+            padding-right: 2.5rem;
+        }
+
+        .form-submit {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--light);
+            border: none;
+            border-radius: 12px;
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(4,106,185,0.3);
+        }
+
+        .form-submit:hover::before {
+            opacity: 1;
+        }
+
+        .form-submit span,
+        .form-submit i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-features {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--gray-400);
+            font-size: 0.95rem;
+        }
+
+        .feature-icon {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 992px) {
             .contact-form {
-                background: rgba(255,255,255,0.02);
-                border: 1px solid rgba(255,255,255,0.05);
-                border-radius: 20px;
-                padding: 3rem;
+                padding: 2rem;
             }
+        }
 
+        @media (max-width: 768px) {
             .form-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
 
-            .form-group {
-                margin-bottom: 2rem;
-            }
-
-            .form-group.full {
-                grid-column: 1 / -1;
-            }
-
-            .form-label {
-                display: block;
-                color: var(--gray-300);
-                margin-bottom: 0.5rem;
-                font-size: 0.9rem;
-            }
-
-            .form-input {
-                width: 100%;
-                padding: 1rem;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.1);
-                border-radius: 10px;
-                color: var(--light);
-                transition: all 0.3s ease;
-            }
-
-            .form-input:focus {
-                outline: none;
-                border-color: var(--primary);
-                background: rgba(255,255,255,0.08);
-                box-shadow: 0 0 0 3px rgba(4,106,185,0.1);
-            }
-
-            .form-textarea {
-                height: 150px;
-                resize: vertical;
-            }
-
-            .form-submit {
-                grid-column: 1 / -1;
-                background: var(--gradient-primary);
-                color: var(--light);
-                border: none;
-                border-radius: 10px;
-                padding: 1.2rem;
-                font-size: 1.1rem;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-            }
-
-            .form-submit:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 20px 40px rgba(4,106,185,0.3);
-            }
-
-            @media (max-width: 992px) {
-                .contact-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-            @media (max-width: 576px) {
-                .form-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-        </style>
-
-        <div class="contact-container">
-            <div class="contact-header">
-                <h2 class="contact-title">Contact Us</h2>
-                <p class="contact-subtitle">Get in touch for premium air conditioning solutions</p>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <i class="fas fa-phone-alt info-icon"></i>
-                        <h3 class="info-title">Call Us</h3>
-                        <p class="info-content">
-                            24/7 Emergency Service
-                            <br>
-                            <a href="tel:0413816375" class="info-link">0413 816 375</a>
-                        </p>
-                        </div>
-
-                    <div class="info-card">
-                        <i class="fas fa-envelope info-icon"></i>
-                        <h3 class="info-title">Email Us</h3>
-                        <p class="info-content">
-                            For Quotes & Inquiries
-                            <br>
-                            <a href="mailto:info@snpaircon.com.au" class="info-link">info@snpaircon.com.au</a>
-                        </p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt info-icon"></i>
-                        <h3 class="info-title">Visit Us</h3>
-                        <p class="info-content">
-                            123 Climate Street
-                            <br>
-                            New South Wales, WA 6000
-                        </p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fas fa-clock info-icon"></i>
-                        <h3 class="info-title">Hours</h3>
-                        <p class="info-content">
-                            Monday - Friday: 7am - 5pm
-                            <br>
-                            Emergency Service: 24/7
-                        </p>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contact-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label class="form-label">Full Name *</label>
-                            <input type="text" class="form-input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Phone Number *</label>
-                            <input type="tel" class="form-input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Email Address *</label>
-                            <input type="email" class="form-input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Service Type *</label>
-                            <select class="form-input" required>
-                                <option value="">Select Service</option>
-                                <option value="installation">New Installation</option>
-                                <option value="repair">Repairs & Service</option>
-                                <option value="commercial">Commercial HVAC</option>
-                                <option value="maintenance">Maintenance Plan</option>
-                                <option value="emergency">Emergency Service</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group full">
-                            <label class="form-label">Property Type *</label>
-                            <select class="form-input" required>
-                                <option value="">Select Property Type</option>
-                                <option value="residential">Residential</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="industrial">Industrial</option>
-                                <option value="retail">Retail</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group full">
-                            <label class="form-label">Message *</label>
-                            <textarea class="form-input form-textarea" required placeholder="Please describe your requirements..."></textarea>
-                        </div>
-
-                        <div class="form-group full">
-                            <label class="form-label">Preferred Contact Time</label>
-                            <select class="form-input">
-                                <option value="">Select Time</option>
-                                <option value="morning">Morning (7am - 12pm)</option>
-                                <option value="afternoon">Afternoon (12pm - 5pm)</option>
-                                <option value="emergency">Urgent - Call ASAP</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="form-submit">
-                            Send Request
-                            <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer-premium">
-        <style>
-            .footer-premium {
-                padding: 6rem 0 2rem;
-                background: var(--darker);
-                position: relative;
-                overflow: hidden;
-            }
-
-            .footer-premium::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right,
-                    transparent,
-                    var(--primary),
-                    transparent
-                );
-            }
-
-            .footer-container {
-                max-width: var(--container-max);
-                margin: 0 auto;
-                padding: 0 var(--container-padding);
-            }
-
-            .footer-grid {
-                display: grid;
-                grid-template-columns: 2fr repeat(3, 1fr);
-                gap: 4rem;
-                margin-bottom: 4rem;
-            }
-
-            .footer-brand {
-                padding-right: 2rem;
-            }
-
-            .footer-logo {
-                font-size: 1.8rem;
-                font-weight: 700;
-                color: var(--light);
-                text-decoration: none;
-                margin-bottom: 1.5rem;
-                display: block;
-            }
-
-            .footer-description {
-                color: var(--gray-400);
-                margin-bottom: 2rem;
-                line-height: 1.7;
-            }
-
-            .social-links {
-                display: flex;
+            .form-features {
+                flex-direction: column;
+                align-items: center;
                 gap: 1rem;
             }
+        }
+    </style>
 
-            .social-link {
-                width: 40px;
-                height: 40px;
-                background: rgba(255,255,255,0.05);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--light);
-                text-decoration: none;
-                transition: all 0.3s ease;
+    <div class="contact-container">
+        <div class="contact-header">
+            <div class="contact-pretitle">Get in Touch</div>
+            <h2 class="contact-title">Let's Discuss Your Project</h2>
+            <p class="contact-subtitle">Tell us about your air conditioning needs and we'll create the perfect climate solution for you</p>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-input" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-input" required placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-input" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Service Type *</label>
+                        <select class="form-input form-select" required>
+                            <option value="">Select Service</option>
+                            <option value="installation">New Installation</option>
+                            <option value="repair">Repairs & Service</option>
+                            <option value="commercial">Commercial HVAC</option>
+                            <option value="maintenance">Maintenance Plan</option>
+                            <option value="emergency">Emergency Service</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label class="form-label">Property Type *</label>
+                        <select class="form-input form-select" required>
+                            <option value="">Select Property Type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="retail">Retail</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label class="form-label">Project Details *</label>
+                        <textarea class="form-input form-textarea" required 
+                            placeholder="Please tell us about your requirements, including:&#10;• Type of property&#10;• Current system (if any)&#10;• Specific concerns or preferences"></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        <span>Submit Inquiry</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="form-features">
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <span>Your Information is Secure</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <span>Quick Response Time</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <span>No Obligation Quote</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-premium">
+    <style>
+        .footer-premium {
+            background: linear-gradient(to bottom, var(--darker), #030407);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 80%;
+            left: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), var(--primary), transparent);
+        }
+
+        .footer-premium::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(4,106,185,0.03) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(198,40,52,0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .footer-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 max(2rem, 5vw);
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1.2fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-section:hover {
+            background: rgba(255,255,255,0.03);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            color: var(--light);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .section-title i {
+            color: var(--primary);
+        }
+
+        .map-container {
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .map-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 12px;
+            padding: 1px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .address-info {
+            color: var(--gray-400);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 12px;
+        }
+
+        .business-hours {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .hours-row:hover {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .day {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+        }
+
+        .hours {
+            color: var(--light);
+            font-size: 0.95rem;
+        }
+
+        .current-day {
+            background: rgba(4,106,185,0.1);
+            border: 1px solid rgba(4,106,185,0.2);
+        }
+
+        .current-day .day {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .service-block {
+            padding: 1rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-block:hover {
+            background: rgba(255,255,255,0.03);
+            transform: translateX(5px);
+        }
+
+        .service-block h4 {
+            color: var(--light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-block h4 i {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .service-block p {
+            color: var(--gray-400);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--primary);
+            color: var(--light);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            background: var(--secondary);
+            box-shadow: 0 10px 20px rgba(198,40,52,0.2);
+        }
+
+        .certification-badges {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gray-400);
+            font-size: 0.9rem;
+        }
+
+        .badge i {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            color: var(--light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(4,106,185,0.2);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+            color: var(--gray-400);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
             }
+        }
 
-            .social-link:hover {
-                background: var(--primary);
-                transform: translateY(-3px);
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
             }
-
-            .footer-column h4 {
-                color: var(--light);
-                font-size: 1.2rem;
-                margin-bottom: 1.5rem;
+            .footer-section {
+                padding: 1.5rem;
             }
+        }
+    </style>
 
-            .footer-links {
-                list-style: none;
-                padding: 0;
-            }
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3 class="section-title">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Visit Site
+                </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.763939507618!2d151.1061654!3d-33.8976115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1e1947fcf67%3A0xb041c03aa3319529!2sSNP%20Air%20Conditioning!5e0!3m2!1sen!2sau!4v1732579829088!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="address-info">
+                    11/26 Clyde St<br>
+                    Croydon Park NSW 2133<br>
+                    <small>4424+XF Croydon Park, New South Wales</small>
+                </div>
+            </div>
 
-            .footer-links li {
-                margin-bottom: 0.8rem;
-            }
+            <div class="footer-section">
+                <h3 class="section-title">
+                    <i class="fas fa-clock"></i>
+                    Opening Hours
+                </h3>
+                <div class="business-hours">
+                    <div class="hours-row">
+                        <span class="day">Monday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row current-day">
+                        <span class="day">Tuesday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Wednesday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Thursday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Friday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Saturday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Sunday</span>
+                        <span class="hours">Open 24 hours</span>
+                    </div>
+                </div>
+            </div>
 
-            .footer-link {
-                color: var(--gray-400);
-                text-decoration: none;
-                transition: all 0.3s ease;
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-            }
+            <div class="footer-section">
+                <h3 class="section-title">
+                    <i class="fas fa-headset"></i>
+                    Customer Support
+                </h3>
+                
+                <div class="service-block">
+                    <h4>
+                        <i class="fas fa-phone-alt"></i>
+                        24/7 Emergency Service
+                    </h4>
+                    <p>Available around the clock for urgent AC repairs and maintenance.</p>
+                    <a href="tel:0413816375" class="contact-button">
+                        <i class="fas fa-phone-alt"></i>
+                        0413 816 375
+                    </a>
+                </div>
 
-            .footer-link:hover {
-                color: var(--primary);
-                transform: translateX(5px);
-            }
+                <div class="service-block">
+                    <h4>
+                        <i class="fas fa-tools"></i>
+                        Licensed Technicians
+                    </h4>
+                    <p>Fully qualified and insured HVAC specialists serving Sydney's Inner West.</p>
+                </div>
 
-            .footer-bottom {
-                padding-top: 2rem;
-                border-top: 1px solid rgba(255,255,255,0.05);
-                text-align: center;
-                color: var(--gray-400);
-            }
-
-            @media (max-width: 992px) {
-                .footer-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-
-            @media (max-width: 576px) {
-                .footer-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-        </style>
-
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="footer-logo">SNP AIR CONDITIONING</a>
-                    <p class="footer-description">
-                        New South Wales's leading provider of premium air conditioning solutions. Specializing in residential and commercial HVAC services with a commitment to excellence.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                <div class="certification-badges">
+                    <div class="badge">
+                        <i class="fas fa-certificate"></i>
+                        Licensed
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        Insured
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-award"></i>
+                        Certified
                     </div>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#services" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Residential AC
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Commercial HVAC
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Emergency Repairs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Maintenance Plans
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                FAQs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Terms of Service
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">
-                                <i class="fas fa-chevron-right"></i>
-                                Warranty Info
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 SNP Air Conditioning. All rights reserved.</p>
             </div>
         </div>
-    </footer>
 
-    <script>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SNP Air Conditioning. All rights reserved.</p>
+        </div>
+    </div>
+</footer>    <script>
         // Navigation Scroll Effect
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('.nav');
